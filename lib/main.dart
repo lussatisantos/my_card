@@ -11,10 +11,11 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.blue,
         body: SafeArea(
-            child: Container(
-          color: Colors.white,
-          child: Text('Hello World!'),
-        )),
+          child: Container(
+            color: Colors.white,
+            child: Text('Hello World!'),
+          ),
+        ),
       ),
     );
   }
