@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
                 ),
               ),
               Text(
-                'ADMINISTRATIVO | SOFTWARE DEVELOPER',
+                'ADMINISTRACTIVE | SOFTWARE DEVELOPER',
                 style: TextStyle(
                   fontSize: 18.0,
                   color: Colors.deepOrange.shade100,
@@ -37,18 +37,48 @@ class MyApp extends StatelessWidget {
                 ),
               ),
               Container(
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                padding: EdgeInsets.all(10.0),
                 child: Row(
                   children: <Widget>[
                     Icon(
                       Icons.phone,
                       size: 25.0,
-                      color: Colors.white,
+                      color: Colors.deepOrange,
+                    ),
+                    SizedBox(
+                      width: 10.0,
                     ),
                     Text(
                       '+244 947 468 177',
                       style: TextStyle(
                         fontFamily: 'SourceSansPro',
-                        color: Colors.white,
+                        color: Colors.deepOrange,
+                        fontSize: 20.0,
+                      ),
+                    )
+                  ],
+                ),
+              ),
+              Container(
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                padding: EdgeInsets.all(10.0),
+                child: Row(
+                  children: <Widget>[
+                    Icon(
+                      Icons.mail,
+                      size: 25.0,
+                      color: Colors.deepOrange,
+                    ),SizedBox(
+                      width: 10.0,
+                    ),
+                    Text(
+                      'lussatisantos10@gmail.com',
+                      style: TextStyle(
+                        fontFamily: 'SourceSansPro',
+                        color: Colors.deepOrange,
                         fontSize: 20.0,
                       ),
                     )
