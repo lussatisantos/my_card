@@ -27,12 +27,32 @@ class MyApp extends StatelessWidget {
                 ),
               ),
               Text(
-                '   ADMINISTRATIVO | SOFTWARE DEVELOPER',
+                'ADMINISTRATIVO | SOFTWARE DEVELOPER',
                 style: TextStyle(
-                    fontSize: 20.0,
-                    color: Colors.deepOrange.shade100,
-                    fontFamily: 'SourceSansPro',
-                    fontWeight: FontWeight.bold
+                  fontSize: 18.0,
+                  color: Colors.deepOrange.shade100,
+                  fontFamily: 'SourceSansPro',
+                  fontWeight: FontWeight.bold,
+                  letterSpacing: 1.0,
+                ),
+              ),
+              Container(
+                child: Row(
+                  children: <Widget>[
+                    Icon(
+                      Icons.phone,
+                      size: 25.0,
+                      color: Colors.white,
+                    ),
+                    Text(
+                      '+244 947 468 177',
+                      style: TextStyle(
+                        fontFamily: 'SourceSansPro',
+                        color: Colors.white,
+                        fontSize: 20.0,
+                      ),
+                    )
+                  ],
                 ),
               )
             ],
@@ -42,4 +62,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
