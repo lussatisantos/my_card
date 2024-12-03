@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.deepOrange,
         body: SafeArea(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               CircleAvatar(
                 backgroundImage: AssetImage('imgs/profile.png'),
@@ -36,56 +37,51 @@ class MyApp extends StatelessWidget {
                   letterSpacing: 1.0,
                 ),
               ),
-              Container(
-                color: Colors.white,
-                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                padding: EdgeInsets.all(10.0),
-                child: Row(
-                  children: <Widget>[
-                    Icon(
-                      Icons.phone,
-                      size: 25.0,
-                      color: Colors.deepOrange,
-                    ),
-                    SizedBox(
-                      width: 10.0,
-                    ),
-                    Text(
-                      '+244 947 468 177',
-                      style: TextStyle(
-                        fontFamily: 'SourceSansPro',
-                        color: Colors.deepOrange,
-                        fontSize: 20.0,
-                      ),
-                    )
-                  ],
+              SizedBox(
+                height: 20.0,
+                width: 350.0,
+                child: Divider(
+                  color: Colors.deepOrange.shade100,
                 ),
               ),
-              Container(
+              Card(
                 color: Colors.white,
                 margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                padding: EdgeInsets.all(10.0),
-                child: Row(
-                  children: <Widget>[
-                    Icon(
-                      Icons.mail,
-                      size: 25.0,
+                child: ListTile(
+                  leading: Icon(
+                    Icons.phone,
+                    size: 25.0,
+                    color: Colors.deepOrange,
+                  ),
+                  title: Text(
+                    '+244 947 468 177',
+                    style: TextStyle(
+                      fontFamily: 'SourceSansPro',
                       color: Colors.deepOrange,
+                      fontSize: 20.0,
                     ),
-                    SizedBox(
-                      width: 10.0,
-                    ),
-                    Text(
-                      'lussatisantos10@gmail.com',
-                      style: TextStyle(
-                        fontFamily: 'SourceSansPro',
-                        color: Colors.deepOrange,
-                        fontSize: 20.0,
-                      ),
-                    )
-                  ],
+                  ),
                 ),
-              )
+              ),
+              Card(
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.mail,
+                    size: 25.0,
+                    color: Colors.deepOrange,
+                  ),
+                  title: Text(
+                    'lussatisantos10@gmail.com',
+                    style: TextStyle(
+                      fontFamily: 'SourceSansPro',
+                      color: Colors.deepOrange,
+                      fontSize: 20.0,
+                    ),
+                  ),
+                ),
+              ),
             ],
           ),
         ),
