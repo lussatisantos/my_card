@@ -71,7 +71,8 @@ class MyApp extends StatelessWidget {
                       Icons.mail,
                       size: 25.0,
                       color: Colors.deepOrange,
-                    ),SizedBox(
+                    ),
+                    SizedBox(
                       width: 10.0,
                     ),
                     Text(
